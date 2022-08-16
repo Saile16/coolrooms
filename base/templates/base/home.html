@@ -30,7 +30,9 @@
           <a class="btn btn--main btn--pill" href="{% url 'topics' %}"
             >Browse Topics</a
           >
-          <a class="btn btn--main btn--pill" href="{% url 'activity' %}">Recent Activities</a>
+          <a class="btn btn--main btn--pill" href="{% url 'activity' %}"
+            >Recent Activities</a
+          >
         </div>
       </div>
       <div class="roomList__header">
@@ -38,7 +40,7 @@
           <h2>Study Room</h2>
           <p>{{room_count}} rooms available</p>
         </div>
-        <a class="btn btn--main" href="{%url 'create-room' %}">
+        <a class="btn btn--main" href="{% url 'create-room' %}">
           <svg
             version="1.1"
             xmlns="http://www.w3.org/2000/svg"
